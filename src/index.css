@@ -1,0 +1,141 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(33, 31, 31);
+}
+
+.todo-container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container h1{
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.input-container{
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.input-container input{
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(82, 80, 75);
+}
+
+.input-container input:focus, .input-container input:hover{
+  box-shadow: inset 2px 2px 2px rgb(82, 80, 75);
+}
+
+.add-button{
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(26, 191, 191);
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgb(57, 59, 59);
+}
+
+.add-button:hover, .add-button:focus-within{
+  box-shadow: inset 2px 2px 2px rgb(104, 130, 126);
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+ol li{
+  background-color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  min-width: 400px;
+  gap: 5px;
+  padding: 12px 25px;
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
+
+.text{
+  font-size: 1.5rem;
+  padding: 0 15px;
+  font-weight: 700;
+}
+
+.delete-button{
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(191, 26, 26);
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgb(59, 57, 57);
+}
+
+.delete-button:hover, .delete-button:focus-within{
+  box-shadow: inset 2px 2px 2px rgb(37, 35, 35);
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+.up-button{
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(60, 217, 204);
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgb(59, 57, 57);
+}
+
+.up-button:hover, .up-button:focus-within{
+  box-shadow: inset 1px 1px 1px rgb(37, 35, 35);
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+.down-button{
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(60, 217, 204);
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgb(59, 57, 57);
+}
+
+.down-button:hover, .down-button:focus-within{
+  box-shadow: inset 1px 1px 1px rgb(37, 35, 35);
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
+@media screen and (max-width: 500px) {
+  ol li{
+    min-width: 300px;
+  }
+
+  .text{
+    font-size: 1.2rem;
+  }
+
+  .todo-container h1{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  ol li{
+    min-width: 200px;
+  }
+
+  .text{
+    font-size: 1.1rem;
+  }
+
+  .todo-container h1{
+    font-size: 2.5rem;
+  }
+}
